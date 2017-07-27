@@ -1,0 +1,10 @@
+Name: <%= @user.name %><br>
+Height: <%= @user.height %><br>
+Happiness: <%= @user.happiness %><br>
+Nausea: <%= @user.nausea %><br>
+Tickets: <%= @user.tickets %><br>
+Mood: <%= @user.mood %><br>
+<%= "ADMIN" if @user.admin? %><br>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
